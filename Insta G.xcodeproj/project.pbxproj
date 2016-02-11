@@ -8,13 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		DD94CB0F1C6BED1500D60549 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD94CB0E1C6BED1500D60549 /* AppDelegate.swift */; };
-		DD94CB111C6BED1500D60549 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD94CB101C6BED1500D60549 /* ViewController.swift */; };
 		DD94CB141C6BED1500D60549 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD94CB121C6BED1500D60549 /* Main.storyboard */; };
 		DD94CB171C6BED1500D60549 /* Insta_G.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DD94CB151C6BED1500D60549 /* Insta_G.xcdatamodeld */; };
 		DD94CB191C6BED1500D60549 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD94CB181C6BED1500D60549 /* Assets.xcassets */; };
 		DD94CB1C1C6BED1500D60549 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD94CB1A1C6BED1500D60549 /* LaunchScreen.storyboard */; };
 		DD94CB271C6BED1500D60549 /* Insta_GTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD94CB261C6BED1500D60549 /* Insta_GTests.swift */; };
 		DD94CB321C6BED1500D60549 /* Insta_GUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD94CB311C6BED1500D60549 /* Insta_GUITests.swift */; };
+		DD94CB401C6BF90200D60549 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD94CB3F1C6BF90200D60549 /* PhotosViewController.swift */; };
+		F373D03D180280DA6CA3CB25 /* Pods_Insta_G.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B79D636D5740969E9A684486 /* Pods_Insta_G.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,9 +36,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		77A291EDBCD7D81ADA741290 /* Pods-Insta G.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Insta G.release.xcconfig"; path = "Pods/Target Support Files/Pods-Insta G/Pods-Insta G.release.xcconfig"; sourceTree = "<group>"; };
+		AA8E1149AAB3EAC7642B9F67 /* Pods-Insta G.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Insta G.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Insta G/Pods-Insta G.debug.xcconfig"; sourceTree = "<group>"; };
+		B79D636D5740969E9A684486 /* Pods_Insta_G.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Insta_G.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD94CB0B1C6BED1500D60549 /* Insta G.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Insta G.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD94CB0E1C6BED1500D60549 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DD94CB101C6BED1500D60549 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DD94CB131C6BED1500D60549 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DD94CB161C6BED1500D60549 /* Insta_G.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Insta_G.xcdatamodel; sourceTree = "<group>"; };
 		DD94CB181C6BED1500D60549 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +52,7 @@
 		DD94CB2D1C6BED1500D60549 /* Insta GUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Insta GUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD94CB311C6BED1500D60549 /* Insta_GUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Insta_GUITests.swift; sourceTree = "<group>"; };
 		DD94CB331C6BED1500D60549 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD94CB3F1C6BF90200D60549 /* PhotosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F373D03D180280DA6CA3CB25 /* Pods_Insta_G.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +81,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		09FF68A634E2F70E457E5015 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AA8E1149AAB3EAC7642B9F67 /* Pods-Insta G.debug.xcconfig */,
+				77A291EDBCD7D81ADA741290 /* Pods-Insta G.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		27E2951646DD92D0E42C5569 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B79D636D5740969E9A684486 /* Pods_Insta_G.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DD94CB021C6BED1400D60549 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +105,8 @@
 				DD94CB251C6BED1500D60549 /* Insta GTests */,
 				DD94CB301C6BED1500D60549 /* Insta GUITests */,
 				DD94CB0C1C6BED1500D60549 /* Products */,
+				09FF68A634E2F70E457E5015 /* Pods */,
+				27E2951646DD92D0E42C5569 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,12 +124,12 @@
 			isa = PBXGroup;
 			children = (
 				DD94CB0E1C6BED1500D60549 /* AppDelegate.swift */,
-				DD94CB101C6BED1500D60549 /* ViewController.swift */,
 				DD94CB121C6BED1500D60549 /* Main.storyboard */,
 				DD94CB181C6BED1500D60549 /* Assets.xcassets */,
 				DD94CB1A1C6BED1500D60549 /* LaunchScreen.storyboard */,
 				DD94CB1D1C6BED1500D60549 /* Info.plist */,
 				DD94CB151C6BED1500D60549 /* Insta_G.xcdatamodeld */,
+				DD94CB3F1C6BF90200D60549 /* PhotosViewController.swift */,
 			);
 			path = "Insta G";
 			sourceTree = "<group>";
@@ -135,9 +159,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DD94CB361C6BED1500D60549 /* Build configuration list for PBXNativeTarget "Insta G" */;
 			buildPhases = (
+				8B890CA5BB20199060830510 /* Check Pods Manifest.lock */,
 				DD94CB071C6BED1400D60549 /* Sources */,
 				DD94CB081C6BED1400D60549 /* Frameworks */,
 				DD94CB091C6BED1400D60549 /* Resources */,
+				CD0392EA3EC3F8484C093BD5 /* Embed Pods Frameworks */,
+				1B4D0C3DDE5B6CAA0CA27CAE /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -257,13 +284,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1B4D0C3DDE5B6CAA0CA27CAE /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Insta G/Pods-Insta G-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B890CA5BB20199060830510 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CD0392EA3EC3F8484C093BD5 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Insta G/Pods-Insta G-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DD94CB071C6BED1400D60549 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD94CB401C6BF90200D60549 /* PhotosViewController.swift in Sources */,
 				DD94CB171C6BED1500D60549 /* Insta_G.xcdatamodeld in Sources */,
-				DD94CB111C6BED1500D60549 /* ViewController.swift in Sources */,
 				DD94CB0F1C6BED1500D60549 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -402,6 +477,7 @@
 		};
 		DD94CB371C6BED1500D60549 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA8E1149AAB3EAC7642B9F67 /* Pods-Insta G.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Insta G/Info.plist";
@@ -413,6 +489,7 @@
 		};
 		DD94CB381C6BED1500D60549 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77A291EDBCD7D81ADA741290 /* Pods-Insta G.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Insta G/Info.plist";
@@ -489,6 +566,7 @@
 				DD94CB381C6BED1500D60549 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DD94CB391C6BED1500D60549 /* Build configuration list for PBXNativeTarget "Insta GTests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +575,7 @@
 				DD94CB3B1C6BED1500D60549 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DD94CB3C1C6BED1500D60549 /* Build configuration list for PBXNativeTarget "Insta GUITests" */ = {
 			isa = XCConfigurationList;
@@ -505,6 +584,7 @@
 				DD94CB3E1C6BED1500D60549 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
