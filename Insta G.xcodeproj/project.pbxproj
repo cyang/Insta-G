@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD3DD5011C756FDC00EF56D8 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD3DD5001C756FDC00EF56D8 /* PhotoCell.swift */; };
 		DD94CB0F1C6BED1500D60549 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD94CB0E1C6BED1500D60549 /* AppDelegate.swift */; };
 		DD94CB141C6BED1500D60549 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD94CB121C6BED1500D60549 /* Main.storyboard */; };
 		DD94CB171C6BED1500D60549 /* Insta_G.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DD94CB151C6BED1500D60549 /* Insta_G.xcdatamodeld */; };
@@ -39,6 +40,7 @@
 		77A291EDBCD7D81ADA741290 /* Pods-Insta G.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Insta G.release.xcconfig"; path = "Pods/Target Support Files/Pods-Insta G/Pods-Insta G.release.xcconfig"; sourceTree = "<group>"; };
 		AA8E1149AAB3EAC7642B9F67 /* Pods-Insta G.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Insta G.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Insta G/Pods-Insta G.debug.xcconfig"; sourceTree = "<group>"; };
 		B79D636D5740969E9A684486 /* Pods_Insta_G.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Insta_G.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DD3DD5001C756FDC00EF56D8 /* PhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
 		DD94CB0B1C6BED1500D60549 /* Insta G.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Insta G.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD94CB0E1C6BED1500D60549 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD94CB131C6BED1500D60549 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 				DD94CB1D1C6BED1500D60549 /* Info.plist */,
 				DD94CB151C6BED1500D60549 /* Insta_G.xcdatamodeld */,
 				DD94CB3F1C6BF90200D60549 /* PhotosViewController.swift */,
+				DD3DD5001C756FDC00EF56D8 /* PhotoCell.swift */,
 			);
 			path = "Insta G";
 			sourceTree = "<group>";
@@ -337,6 +340,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD3DD5011C756FDC00EF56D8 /* PhotoCell.swift in Sources */,
 				DD94CB401C6BF90200D60549 /* PhotosViewController.swift in Sources */,
 				DD94CB171C6BED1500D60549 /* Insta_G.xcdatamodeld in Sources */,
 				DD94CB0F1C6BED1500D60549 /* AppDelegate.swift in Sources */,

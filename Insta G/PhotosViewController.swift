@@ -7,18 +7,54 @@
 //
 
 import UIKit
+import AFNetworking
 
-class PhotosViewController: UIViewController {
 
+class PhotosViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+
+    @IBOutlet weak var tableView: UITableView!
+    var photos: [NSDictionary]?
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.rowHeight = 320
         // Do any additional setup after loading the view.
+        
+        getData()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if let photos = photos {
+            return photos.count;
+        } else {
+            return 0;
+        }
+    }
+    
+    // Row display. Implementers should *always* try to reuse cells by setting each cell's reuseIdentifier and querying for available reusable cells with dequeueReusableCellWithIdentifier:
+    // Cell gets various attributes set automatically based on table (separators) and data source (accessory views, editing controls)
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCellWithIdentifier("PhotoCell", forIndexPath: indexPath) as! PhotoCell;
+        
+        let photo = photos![indexPath.row]
+        let username = photo["user"]!["username"] as! String!
+        let photoUrl = NSURL(string: photo["images"]!["standard_resolution"]!!["url"] as! String!)
+        
+        
+        cell.usernameLabel.text = username
+        cell.pictureImageView.setImageWithURL(photoUrl!)
+        
+        return cell;
     }
     
     func getData(){
@@ -37,6 +73,10 @@ class PhotosViewController: UIViewController {
                     if let responseDictionary = try! NSJSONSerialization.JSONObjectWithData(
                         data, options:[]) as? NSDictionary {
                             NSLog("response: \(responseDictionary)")
+                            
+                            self.photos = responseDictionary["data"] as? [NSDictionary]
+                            
+                            self.tableView.reloadData();
                     }
                 }
         });
