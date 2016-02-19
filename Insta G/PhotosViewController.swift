@@ -51,17 +51,27 @@ class PhotosViewController: UIViewController, UITableViewDelegate, UITableViewDa
         profileView.layer.borderWidth = 1;
         
         // Use the section number to get the right URL
-        // profileView.setImageWithURL(...)
+        let photo = photos![section]
+        let profilePhotoUrl = NSURL(string: photo["user"]!["profile_picture"] as! String)
+        
+        profileView.setImageWithURL(profilePhotoUrl!)
         
         headerView.addSubview(profileView)
         
         // Add a UILabel for the username here
+        let usernameLabel = UILabel(frame: CGRect(x: 50, y: 15, width: 100, height: 30))
+        let username = photo["user"]!["username"] as! String!
+
+        usernameLabel.text = username
+        usernameLabel.sizeToFit()
+        
+        headerView.addSubview(usernameLabel)
         
         return headerView
     }
     
     func tableView(tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 30
+        return 50
     }
 
     
@@ -77,11 +87,9 @@ class PhotosViewController: UIViewController, UITableViewDelegate, UITableViewDa
         let cell = tableView.dequeueReusableCellWithIdentifier("PhotoCell", forIndexPath: indexPath) as! PhotoCell;
         
         let photo = photos![indexPath.section]
-        let username = photo["user"]!["username"] as! String!
         let photoUrl = NSURL(string: photo["images"]!["standard_resolution"]!!["url"] as! String!)
         
         
-        cell.usernameLabel.text = username
         cell.pictureImageView.setImageWithURL(photoUrl!)
         
         return cell;
