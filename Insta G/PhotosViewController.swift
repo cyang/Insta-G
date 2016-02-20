@@ -110,7 +110,6 @@ class PhotosViewController: UIViewController, UITableViewDelegate, UITableViewDa
                 if let data = dataOrNil {
                     if let responseDictionary = try! NSJSONSerialization.JSONObjectWithData(
                         data, options:[]) as? NSDictionary {
-                            NSLog("response: \(responseDictionary)")
                             
                             self.photos = responseDictionary["data"] as? [NSDictionary]
                             
@@ -121,6 +120,20 @@ class PhotosViewController: UIViewController, UITableViewDelegate, UITableViewDa
         task.resume()
     }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let vc = segue.destinationViewController as! PhotoDetailsViewController
+        let indexPath = tableView.indexPathForCell(sender as! UITableViewCell)
+        
+        let photo = photos![(indexPath?.section)!]
+        let photoUrl = NSURL(string: photo["images"]!["standard_resolution"]!!["url"] as! String!)
+        
+        vc.photoUrl = photoUrl
+    
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath){
+        tableView.deselectRowAtIndexPath(indexPath, animated:true)
+    }
 
     /*
     // MARK: - Navigation

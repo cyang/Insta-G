@@ -16,6 +16,7 @@
 		DD94CB271C6BED1500D60549 /* Insta_GTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD94CB261C6BED1500D60549 /* Insta_GTests.swift */; };
 		DD94CB321C6BED1500D60549 /* Insta_GUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD94CB311C6BED1500D60549 /* Insta_GUITests.swift */; };
 		DD94CB401C6BF90200D60549 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD94CB3F1C6BF90200D60549 /* PhotosViewController.swift */; };
+		DDE726581C78286B0038D99A /* PhotoDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE726571C78286B0038D99A /* PhotoDetailsViewController.swift */; };
 		F373D03D180280DA6CA3CB25 /* Pods_Insta_G.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B79D636D5740969E9A684486 /* Pods_Insta_G.framework */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +56,7 @@
 		DD94CB311C6BED1500D60549 /* Insta_GUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Insta_GUITests.swift; sourceTree = "<group>"; };
 		DD94CB331C6BED1500D60549 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DD94CB3F1C6BF90200D60549 /* PhotosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
+		DDE726571C78286B0038D99A /* PhotoDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 				DD94CB151C6BED1500D60549 /* Insta_G.xcdatamodeld */,
 				DD94CB3F1C6BF90200D60549 /* PhotosViewController.swift */,
 				DD3DD5001C756FDC00EF56D8 /* PhotoCell.swift */,
+				DDE726571C78286B0038D99A /* PhotoDetailsViewController.swift */,
 			);
 			path = "Insta G";
 			sourceTree = "<group>";
@@ -341,6 +344,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD3DD5011C756FDC00EF56D8 /* PhotoCell.swift in Sources */,
+				DDE726581C78286B0038D99A /* PhotoDetailsViewController.swift in Sources */,
 				DD94CB401C6BF90200D60549 /* PhotosViewController.swift in Sources */,
 				DD94CB171C6BED1500D60549 /* Insta_G.xcdatamodeld in Sources */,
 				DD94CB0F1C6BED1500D60549 /* AppDelegate.swift in Sources */,

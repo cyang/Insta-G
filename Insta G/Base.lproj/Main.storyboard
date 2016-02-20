@@ -18,11 +18,11 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PhotoCell" rowHeight="285" id="pBm-W6-UaR" customClass="PhotoCell" customModule="Insta_G" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="PhotoCell" rowHeight="285" id="pBm-W6-UaR" customClass="PhotoCell" customModule="Insta_G" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="92" width="320" height="285"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pBm-W6-UaR" id="dcz-Vl-5pm">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="284"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="287" height="284"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="6Lj-ku-HZK">
@@ -33,6 +33,7 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="pictureImageView" destination="6Lj-ku-HZK" id="XCJ-o7-Fbl"/>
+                                            <segue destination="QDE-JN-N3Q" kind="push" id="ehd-Xk-vXJ"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -48,6 +49,30 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="661" y="310"/>
+        </scene>
+        <!--Photo Details View Controller-->
+        <scene sceneID="rOb-V4-kZz">
+            <objects>
+                <viewController id="QDE-JN-N3Q" customClass="PhotoDetailsViewController" customModule="Insta_G" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gTI-p8-gvU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="gQY-xx-FMP">
+                                <rect key="frame" x="0.0" y="146" width="320" height="302"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="NFC-ks-50P"/>
+                    <connections>
+                        <outlet property="photoImageView" destination="gQY-xx-FMP" id="LCQ-yv-Wro"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OK6-fR-8jf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1065" y="309"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="EIq-uD-cGN">
