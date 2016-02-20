@@ -5,6 +5,7 @@ use_frameworks!
 
 target 'Insta G' do
     pod 'AFNetworking', '~> 3.0'    
+    pod 'SVPullToRefresh'
 end
 
 target 'Insta GTests' do

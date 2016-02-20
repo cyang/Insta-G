@@ -14,6 +14,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>SVPullToRefresh.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -22,7 +27,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>73482B3C36C1D1AF30B6D2DF77BF02B9</key>
+		<key>889DF292CFE639F2E1762945FE35DEBD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D0356EB7A5FF88BBB27619249F0190F8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
